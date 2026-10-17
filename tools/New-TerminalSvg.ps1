@@ -3,7 +3,7 @@
     Renders a text "screen" into a terminal-style SVG for the README.
     Colour markup inside the text: [[green]]text[[/]]  (default, dim, cyan, green, yellow, red, white, hl)
 .EXAMPLE
-    .\tools\New-TerminalSvg.ps1 -InputFile docs\screens\menu.txt -OutFile docs\images\screen-menu.svg -Title 'Start.cmd'
+    .\tools\New-TerminalSvg.ps1 -InputFile docs\screens\cleanup.txt -OutFile docs\images\screen-cleanup.svg
 #>
 param(
     [Parameter(Mandatory)][string]$InputFile,
