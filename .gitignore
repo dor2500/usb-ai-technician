@@ -1,0 +1,15 @@
+# Downloaded by Setup-USB (too big for git)
+bin/*
+!bin/README.md
+models/*
+!models/README.md
+
+# Your own setup files
+Installers/*
+!Installers/README.md
+!Installers/installers.example.json
+
+# Created at runtime on the USB
+logs/
+temp/
+backups/

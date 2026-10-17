@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1021"/>
+      <stop offset="1" stop-color="#1b2252"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a4ad9"/>
+      <stop offset="1" stop-color="#2531a3"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e3e7ef"/>
+      <stop offset="1" stop-color="#9aa3b5"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#59f0c2" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#59f0c2" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity="0.04"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="360" fill="url(#bg)"/>
+  <rect width="1280" height="360" fill="url(#grid)"/>
+
+  <!-- USB stick -->
+  <g transform="translate(120 70) rotate(-18 150 110)">
+    <rect x="250" y="70" width="90" height="80" rx="6" fill="url(#metal)"/>
+    <rect x="272" y="88" width="18" height="14" rx="2" fill="#5b6478"/>
+    <rect x="302" y="88" width="18" height="14" rx="2" fill="#5b6478"/>
+    <rect x="0" y="40" width="260" height="140" rx="26" fill="url(#body)"/>
+    <rect x="12" y="52" width="236" height="116" rx="18" fill="none" stroke="#ffffff" stroke-opacity="0.15"/>
+    <circle cx="36" cy="110" r="10" fill="#0b1021" opacity="0.6"/>
+    <circle cx="140" cy="110" r="70" fill="url(#glow)"/>
+    <!-- chip -->
+    <rect x="102" y="72" width="76" height="76" rx="10" fill="#0e1430" stroke="#59f0c2" stroke-width="3"/>
+    <g stroke="#59f0c2" stroke-width="3" stroke-linecap="round">
+      <path d="M118 72v-10M140 72v-10M162 72v-10M118 148v10M140 148v10M162 148v10"/>
+      <path d="M102 92h-10M102 110h-10M102 128h-10M178 92h10M178 110h10M178 128h10"/>
+    </g>
+    <text x="140" y="122" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#59f0c2" text-anchor="middle">AI</text>
+  </g>
+
+  <!-- Title -->
+  <text x="560" y="140" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="64" font-weight="700" fill="#ffffff">USB AI Technician</text>
+  <text x="562" y="184" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="24" fill="#b8c1ff">Plug in. Clean up. Install. Update. Unplug.</text>
+
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="20" font-weight="600">
+    <rect x="562" y="214" width="150" height="42" rx="21" fill="#ff7a7a" fill-opacity="0.15" stroke="#ff7a7a"/>
+    <text x="637" y="242" fill="#ffb0b0" text-anchor="middle">1  Clean up</text>
+    <rect x="726" y="214" width="138" height="42" rx="21" fill="#ffd866" fill-opacity="0.15" stroke="#ffd866"/>
+    <text x="795" y="242" fill="#ffe7a3" text-anchor="middle">2  Install</text>
+    <rect x="878" y="214" width="138" height="42" rx="21" fill="#59f0c2" fill-opacity="0.15" stroke="#59f0c2"/>
+    <text x="947" y="242" fill="#a6f7df" text-anchor="middle">3  Update</text>
+  </g>
+
+  <text x="562" y="300" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18" fill="#8a93c9">100% offline AI  ·  runs from the USB  ·  gpt-oss-20b + llama.cpp  ·  Windows 10 / 11</text>
+</svg>

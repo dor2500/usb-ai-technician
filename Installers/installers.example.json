@@ -1,0 +1,8 @@
+{
+  "installers": [
+    { "file": "ChromeSetup*.exe", "args": "/silent /install" },
+    { "file": "ZoomInstallerFull*.exe", "args": "/quiet /norestart" },
+    { "file": "vlc-*.exe", "args": "/L=1033 /S" },
+    { "file": "OldTool.exe", "interactive": true }
+  ]
+}

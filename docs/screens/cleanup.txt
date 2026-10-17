@@ -1,0 +1,34 @@
+[[cyan]]=== 1. Clean up this PC ===[[/]]
+Scanning installed programs...
+Found 9 programs/apps (drivers, runtimes and system parts are hidden and always kept).
+Starting the AI technician (gpt-oss-20b-MXFP4.gguf)...
+  Loading the model from the USB drive (a USB 3 stick takes 1-3 minutes)............
+[[green]]  AI technician ready (41s).[[/]]
+  AI is reviewing programs 1-9 of 9...
+
+[[dim]]  No.  Action   AI      Name                                     Publisher              AI reason[[/]]
+[[green]]  1    keep     keep    7-Zip 24.08 (x64 edition)                Igor Pavlov            file archiver[[/]]
+[[green]]  2    keep     keep    Google Chrome                            Google LLC             web browser[[/]]
+[[red]]  3    REMOVE   remove  HP Wolf Security - Console               HP Inc.                OEM security trial[[/]]
+[[red]]  4    REMOVE   remove  McAfee LiveSafe                          McAfee, LLC            expired bundled trial antivirus[[/]]
+[[yellow]]  5    keep     ask     Microsoft 365 - en-us                    Microsoft Corporation  depends on your subscription[[/]]
+[[yellow]]  6    keep     ask     Spotify                                  Spotify AB             personal music app[[/]]
+[[red]]  7    REMOVE   remove  WildTangent Games                        WildTangent            preinstalled games[[/]]
+[[green]]  8    keep     keep    Zoom Workplace                           Zoom Video Communica~  video meetings[[/]]
+[[red]]  9    REMOVE   remove  Microsoft.BingNews                       Microsoft Corporation  preinstalled news app[[/]]
+
+[[cyan]]  4 marked for removal. Everything else is kept.[[/]]
+  k 3,5-7  keep these        r 9,12  remove these        ai  reset to AI suggestions
+  keepall  keep everything   go      continue            q   cancel
+  choice: [[hl]]go[[/]]
+
+[[yellow]]These will be uninstalled:[[/]]
+   - HP Wolf Security - Console  (Program)
+   - McAfee LiveSafe  (Program)
+   - WildTangent Games  (Program)
+   - Microsoft.BingNews  (Store app)
+Uninstall 4 item(s)? Type YES to continue: [[hl]]YES[[/]]
+Creating a System Restore point first...
+[[green]]  Restore point created.[[/]]
+Removing HP Wolf Security - Console...
+[[green]]  removed[[/]]

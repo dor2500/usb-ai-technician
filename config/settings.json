@@ -1,0 +1,24 @@
+{
+  "llm": {
+    "enabled": true,
+    "serverExe": "bin\\llama-server.exe",
+    "modelFile": "models\\gpt-oss-20b-MXFP4.gguf",
+    "contextSize": 8192,
+    "reasoningEffort": "low",
+    "startupTimeoutSeconds": 900,
+    "extraArgs": []
+  },
+  "cleanup": {
+    "createRestorePoint": true,
+    "includeStoreApps": true,
+    "offerTempCleanup": true
+  },
+  "installers": {
+    "folder": "Installers",
+    "silentTimeoutMinutes": 30
+  },
+  "windowsUpdate": {
+    "mode": "SecurityOnly",
+    "skipFeatureUpdates": true
+  }
+}
