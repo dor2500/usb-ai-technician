@@ -53,8 +53,11 @@
 
 ### שלב 1 – הכנת ה-USB (פעם אחת, במחשב שלך)
 
-1. מורידים את הפרויקט: **Code ← Download ZIP** ומחלצים ל-USB, או:
-   `git clone https://github.com/dor2500/usb-ai-technician.git E:\usb-ai-technician`
+1. מורידים את הגרסה האחרונה מ-[**Releases**](https://github.com/dor2500/usb-ai-technician/releases/latest) ומחלצים ל-USB:
+   * `usb-ai-technician-vX.Y.Z-with-llama.cpp.zip`: **מומלץ**. כולל גם את llama.cpp, כך שנשאר להוריד רק את המודל.
+   * `usb-ai-technician-vX.Y.Z.zip`: הכלי בלבד.
+
+   המודל עצמו (12GB) לא נמצא ב-Releases, כי GitHub מגביל כל קובץ ל-2GB. `Setup-USB.cmd` מוריד אותו.
 2. מריצים את **`Setup-USB.cmd`** מתוך ה-USB. הוא:
    * מוריד את גרסת llama.cpp העדכנית ל-Windows אל `bin\`. זו גרסת Vulkan, שעובדת עם כרטיסי מסך של NVIDIA, AMD ו-Intel, ובלי כרטיס מסך עוברת למעבד.
    * מוריד את המודל **gpt-oss-20b** (בערך 12GB) אל `models\`. אם ההורדה נקטעת, אפשר להמשיך מאותה נקודה.

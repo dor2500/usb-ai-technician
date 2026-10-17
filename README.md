@@ -62,11 +62,20 @@ keeps its own files (logs, backups, scratch files) on the USB.
 
 ### 1. Prepare the USB (once, on your own PC)
 
+**Easiest:** download the latest package from [**Releases**](https://github.com/dor2500/usb-ai-technician/releases/latest) and extract it onto the USB:
+
+| Package | Contains | Setup then downloads |
+|---|---|---|
+| `usb-ai-technician-vX.Y.Z-with-llama.cpp.zip` | the tool + llama.cpp (Vulkan, x64) | only the model (~12 GB) |
+| `usb-ai-technician-vX.Y.Z.zip` | the tool only | llama.cpp + the model |
+
+Or with git:
+
 ```powershell
-# Option A: clone onto the USB (E: here)
 git clone https://github.com/dor2500/usb-ai-technician.git E:\usb-ai-technician
-# Option B: download the ZIP from GitHub (Code -> Download ZIP) and extract it onto the USB
 ```
+
+> The model is not attached to the release because GitHub limits release files to 2 GB.
 
 Then run **`Setup-USB.cmd`** from the USB. It:
 
